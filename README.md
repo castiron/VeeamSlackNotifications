@@ -73,3 +73,11 @@ Below is an example configuration file.
 	"debug_log": false
 }
 ```
+
+## Test Configuraiton
+
+To test the cofiguration and Slack integration:
+
+```shell
+PowerShell.exe -ExecutionPolicy ByPass -File C:\VeamScripts\VeamSlackNotifications-X.X\SlackTest.ps1
+```
