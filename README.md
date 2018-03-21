@@ -43,9 +43,9 @@ Configure the project:
 
 ```shell
 # Make a new config file
-cp C:\VeeamScripts\VeeamSlackNotifications\config\vsn.example.json C:\VeeamScripts\VeeamSlackNotifications\config\vsn.json
+cp C:\VeeamScripts\VeeamSlackNotifications-X.X\config\vsn.example.json C:\VeeamScripts\VeeamSlackNotifications-X.X\config\vsn.json
 # Edit your config file. You must replace the webhook field with your own slack url.
-notepad.exe C:\VeeamScripts\VeeamSlackNotifications\config\vsn.json
+notepad.exe C:\VeeamScripts\VeeamSlackNotifications-X.X\config\vsn.json
 ```
 
 Finally open Veeam and configure your jobs. Edit them and click on the <img src="https://raw.githubusercontent.com/TheSageColleges/VeeamSlackNotifications/master/asset/img/screens/sh-3.png" height="20"> button.
@@ -53,7 +53,7 @@ Finally open Veeam and configure your jobs. Edit them and click on the <img src=
 Navigate to the "Scripts" tab and paste the following line the script that runs after the job is completed:
 
 ```shell
-Powershell.exe -File C:\VeeamScripts\VeeamSlackNotifications\SlackNotificationBootstrap.ps1
+PowerShell.exe -ExecutionPolicy ByPass -File C:\VeeamScripts\VeeamSlackNotifications-X.X\SlackNotificationBootstrap.ps1
 ```
 
 ![screen](https://raw.githubusercontent.com/TheSageColleges/VeeamSlackNotifications/master/asset/img/screens/sh-1.png)
